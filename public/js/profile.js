@@ -40,7 +40,7 @@ postForm.addEventListener('submit', (e) => {
   }) 
     .then(res => res.text())
     .then(data => {
-      // console.log(data);
+       console.log(data);
       loader.classList.add('hide');
       tweetBodyInput.value = '';
       loadAllTweet();
@@ -64,7 +64,7 @@ function loadAllTweet() {
     .then(res => res.text())
     .then(data => {
       populateTweets(data);
-      // console.log(data);
+       console.log(data);
     })
     .catch(err => console.log(err));
 }
